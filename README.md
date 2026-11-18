@@ -7,7 +7,7 @@ reads `movies.json` and displays movie cutouts in the Orbit wheel.
 **Status:** the Android implementation is built and tested on the projector.
 The first favorites are Anand (2004) on YouTube, Baththa (2026) on Netflix,
 and The Big Bang Theory on Hulu. The entries use sticker cutouts from real scenes, preserving the actors’ original
-faces and poses. The interface keeps the rotating Orbit wheel and Up-to-spin action, with a
+faces and poses. The interface keeps the rotating Orbit wheel and a visible Spin button, with a
 plain dark background, film descriptions/details, and small previous/next arrows. See `artwork/SOURCES.md` for provenance.
 
 ## Add a movie
@@ -76,9 +76,9 @@ contract, unique IDs, local artwork files, size limits, and link schemes.
 ## Projector controls
 
 - Left/right: browse movies.
-- Up: spin the wheel.
+- Up: focus the top action buttons; left/right chooses Spin or Refresh, OK activates.
 - OK: open the title link or choose a service.
-- Down: focus Refresh from GitHub; OK refreshes. A second Down reaches tabs.
+- Down: return from top actions to the wheel; Down from the wheel opens tabs.
 - Menu: select a launcher tab.
 - Play/Pause: spin the wheel.
 - Restart Orbit: automatically check GitHub for catalog updates.

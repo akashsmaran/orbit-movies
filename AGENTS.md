@@ -20,8 +20,10 @@ This repository contains catalog data and artwork, not the Android app source.
 - Native foreground masks, manual masks, cropping, resampling, outlines, and blur are permitted. Do not synthesize faces, bodies, or missing scene content.
 - Do not claim that repository edits have synced to the projector until that behavior is verified.
 
-- Preserve the rotating wheel and Up-to-spin interaction. Do not replace it with a static gallery or thumbnail strip without explicit design approval.
+- Preserve the rotating wheel and visible Spin button. Up navigates to the top buttons and must not immediately spin. Do not replace the wheel with a static gallery or thumbnail strip without explicit design approval.
 - Keep the background dark. Use small previous/next arrow labels; no large stationary side images.
 - `description` and `details` hold factual film text. Verify names and facts from title pages; keep the synopsis short.
 
-- Center the selected cutout horizontally and anchor its bottom above the footer controls. Keep rotation and Up-to-spin intact.
+- Center the selected cutout horizontally and anchor its bottom above the footer controls. Keep rotation and explicit Spin-button activation intact.
+
+- Top-row controls: Up focuses Spin; Left/Right selects Spin or Refresh; OK activates; Down returns to the wheel. Down from the wheel opens tabs.
