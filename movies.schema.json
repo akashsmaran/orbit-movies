@@ -2,43 +2,79 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Orbit movie catalog",
   "type": "object",
-  "required": ["schemaVersion", "movies"],
+  "required": [
+    "schemaVersion",
+    "movies"
+  ],
   "additionalProperties": false,
   "properties": {
-    "schemaVersion": { "const": 1 },
+    "schemaVersion": {
+      "const": 1
+    },
     "movies": {
       "type": "array",
       "maxItems": 200,
       "items": {
         "type": "object",
-        "required": ["id", "title", "artwork", "links"],
+        "required": [
+          "id",
+          "title",
+          "artwork",
+          "links"
+        ],
         "additionalProperties": false,
         "properties": {
-          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{0,99}$" },
-          "title": { "type": "string", "minLength": 1, "maxLength": 200 },
-          "year": { "type": "integer", "minimum": 1888, "maximum": 2200 },
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]{0,99}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "year": {
+            "type": "integer",
+            "minimum": 1888,
+            "maximum": 2200
+          },
           "artwork": {
             "type": "string",
             "description": "Relative path to a transparent PNG/WebP in this repo, or an HTTPS image URL.",
             "minLength": 1
           },
-          "accent": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+          "accent": {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          },
           "links": {
             "type": "array",
             "minItems": 1,
             "items": {
               "type": "object",
-              "required": ["label", "packageName"],
+              "required": [
+                "label",
+                "packageName"
+              ],
               "additionalProperties": false,
               "properties": {
-                "label": { "type": "string", "minLength": 1 },
-                "packageName": { "type": "string", "minLength": 1 },
+                "label": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 100
+                },
+                "packageName": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^[a-zA-Z][a-zA-Z0-9_]*(\\.[a-zA-Z0-9_]+)+$"
+                },
                 "url": {
                   "type": "string",
                   "description": "Verified title-specific HTTPS or streaming-app deep link. Omit to open only the app."
                 }
               }
-            }
+            },
+            "maxItems": 12
           }
         }
       }
