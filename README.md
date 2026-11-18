@@ -7,8 +7,8 @@ reads `movies.json` and displays movie cutouts in the Orbit wheel.
 **Status:** the Android implementation is built and tested on the projector.
 The first favorites are Anand (2004) on YouTube, Baththa (2026) on Netflix,
 and The Big Bang Theory on Hulu. The entries use sticker cutouts from real scenes, preserving the actors’ original
-faces and poses. The interface has blurred scene backgrounds, orbit details, and
-a compact collection strip. See `artwork/SOURCES.md` for provenance.
+faces and poses. The interface keeps the rotating Orbit wheel and Up-to-spin action, with a
+plain dark background, film descriptions/details, and small previous/next arrows. See `artwork/SOURCES.md` for provenance.
 
 ## Add a movie
 
@@ -17,8 +17,8 @@ a compact collection strip. See `artwork/SOURCES.md` for provenance.
 3. Commit artwork and catalog together to `main`.
 
 Entries appear in array order. Use a stable lowercase, hyphenated `id`, a title,
-optional year and accent color, artwork and optional background paths relative
-to `movies.json`, and
+optional year and accent color, a short `description`, up to five `details` rows,
+an artwork path relative to `movies.json`, and
 one or more streaming destinations.
 
 ```json
@@ -76,15 +76,20 @@ contract, unique IDs, local artwork files, size limits, and link schemes.
 ## Projector controls
 
 - Left/right: browse movies.
-- Up: focus the Refresh from GitHub button; OK refreshes.
+- Up: spin the wheel.
 - OK: open the title link or choose a service.
-- Down: focus the collection; press Down again to reach launcher tabs.
+- Down: focus Refresh from GitHub; OK refreshes. A second Down reaches tabs.
 - Menu: select a launcher tab.
-- Play/Pause: choose a random favorite.
+- Play/Pause: spin the wheel.
 - Restart Orbit: automatically check GitHub for catalog updates.
 
 Missing streaming apps show a message. Unsupported title links fall back to
 opening the streaming app, with a message to search for the movie.
+
+The arrow controls name the previous and next titles without large stationary
+side images. The wheel animates these real-scene stickers along its arc while
+turning or spinning. The `description` and first three `details` rows appear
+beside the wheel; metadata sources are recorded in `metadata/SOURCES.md`.
 
 ## Verified installed TV packages
 

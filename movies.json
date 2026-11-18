@@ -14,7 +14,12 @@
           "url": "https://www.youtube.com/watch?v=FB504Bec9uU"
         }
       ],
-      "background": "artwork/anand-2004-v3-background.jpg"
+      "description": "Independent and self-respecting, Roopa finds an unexpected connection when Anand moves into her neighborhood.",
+      "details": [
+        "Telugu · Drama",
+        "Written & directed by Sekhar Kammula",
+        "Raja · Kamalinee Mukherjee"
+      ]
     },
     {
       "id": "baththa-2026",
@@ -29,7 +34,12 @@
           "url": "https://www.netflix.com/title/83064751"
         }
       ],
-      "background": "artwork/baththa-2026-v3-background.jpg"
+      "description": "An anxious schoolboy and a feared gangster strike up an unlikely friendship after a chance encounter in a Madras school restroom.",
+      "details": [
+        "Tamil · Comedy drama",
+        "Vijay Sethupathi · Lijomol Jose",
+        "Also starring Sai Prithviraj"
+      ]
     },
     {
       "id": "the-big-bang-theory",
@@ -44,7 +54,12 @@
           "url": "https://www.hulu.com/series/9bde5aeb-5297-4290-b173-19a4d59cc11d"
         }
       ],
-      "background": "artwork/the-big-bang-theory-v3-background.jpg"
+      "description": "Life outside the lab gets complicated for a group of brilliant, socially awkward friends when their neighbor Penny enters the picture.",
+      "details": [
+        "Sitcom · 12 seasons",
+        "Created by Chuck Lorre & Bill Prady",
+        "Johnny Galecki · Jim Parsons · Kaley Cuoco"
+      ]
     }
   ]
 }

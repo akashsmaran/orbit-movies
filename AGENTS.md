@@ -16,6 +16,10 @@ This repository contains catalog data and artwork, not the Android app source.
 - The repo is public. Never add private information.
 - Automatic sync runs only when Orbit starts. The visible Refresh from GitHub button also syncs on explicit user action. Returning from another app, switching tabs, and browsing do not sync.
 - Artwork must be cut from real movie/show scenes, using original people and poses. Do not use AI-generated or illustrated characters. Seated or cropped scenes are welcome; do not force standing bodies.
-- Use a transparent PNG with a subtle sticker outline. Optional `background` points to a blurred version of the same real scene.
+- Use a transparent PNG with a subtle sticker outline. The active design uses a plain dark background; do not add scene backdrops.
 - Native foreground masks, manual masks, cropping, resampling, outlines, and blur are permitted. Do not synthesize faces, bodies, or missing scene content.
 - Do not claim that repository edits have synced to the projector until that behavior is verified.
+
+- Preserve the rotating wheel and Up-to-spin interaction. Do not replace it with a static gallery or thumbnail strip without explicit design approval.
+- Keep the background dark. Use small previous/next arrow labels; no large stationary side images.
+- `description` and `details` hold factual film text. Verify names and facts from title pages; keep the synopsis short.
