@@ -1,9 +1,18 @@
-# Initial catalog artwork and title links
+# Catalog artwork and title links
 
 Added November 17, 2026, for the user's requested personal favorites.
 Artwork remains owned by its respective rights holders; no ownership or license
-transfer is claimed. These initial files use original title artwork. Transparent
-character extraction was unavailable, so these are not transparent cutouts.
+transfer is claimed. The `v1` files below are retained as original source/reference artwork. The active
+`v2` files are generated people illustrations with true PNG transparency.
+
+## Active v2 illustrations
+
+- `anand-2004-v2.png`: the first realistic painted couple illustration, retained at the user’s request.
+- `baththa-2026-v2.png`: the first realistic painted adult-and-child illustration, retained at the user’s request.
+- `the-big-bang-theory-v2.png`: a realistic painted scientist-friends ensemble. This is generated illustration, not an official cast photograph.
+- All are 1024 × 1536 RGBA PNGs with clear corner alpha and tall compositions.
+- Created using built-in ImageGen. The exact final prompts and method are in `generation-prompts.json`.
+- The launcher anchors artwork at its bottom edge; no rectangle or poster background is drawn.
 
 ## Anand (2004, Telugu)
 

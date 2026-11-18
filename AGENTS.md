@@ -12,7 +12,8 @@ This repository contains catalog data and artwork, not the Android app source.
 - Include title-specific links only when verified. Omit `url` for an app-only fallback.
 - Do not store credentials, access tokens, signed private URLs, APKs, or personal account data.
 - Run `python3 scripts/validate_catalog.py` before committing.
-- Keep each image under 4 MiB. Use a new artwork filename when replacing an image to avoid cached old artwork.
+- Keep each image under 4 MiB. Use a new artwork filename whenever replacing an image; existing image paths are cached indefinitely.
 - The repo is public. Never add private information.
-- Projector sync runs about once per minute while the launcher is active; GitHub caching may add delay.
+- Projector sync runs only when Orbit starts. Returning from another app or switching tabs does not sync. Restart Orbit after catalog updates.
+- Artwork style: tall realistic painted people on a true transparent background, full figures extending from the bottom toward the top. Avoid rectangular posters, text, frames, and clay/toy styling.
 - Do not claim that repository edits have synced to the projector until that behavior is verified.
