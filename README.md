@@ -8,7 +8,7 @@ reads `movies.json` and displays movie cutouts in the Orbit wheel.
 The first favorites are Anand (2004) on YouTube, Baththa (2026) on Netflix,
 and The Big Bang Theory on Hulu. The entries use sticker cutouts from real scenes, preserving the actors’ original
 faces and poses. The interface keeps the rotating Orbit wheel and a visible Spin button, with a
-plain dark background, film descriptions/details, and small previous/next arrows. See `artwork/SOURCES.md` for provenance.
+dark scene backgrounds with faint original-photo context and soft angled light, film descriptions/details, and small previous/next arrows. Cutouts have natural edges with no outline. See `artwork/SOURCES.md` for provenance.
 
 ## Add a movie
 
@@ -87,7 +87,7 @@ Missing streaming apps show a message. Unsupported title links fall back to
 opening the streaming app, with a message to search for the movie.
 
 The selected real-scene cutout is horizontally centered, bottom anchored above
-the footer, and edged in black to blend into the dark screen. The arrow controls
+the footer, with natural transparent edges. The arrow controls
 name the previous and next titles without large stationary
 side images. The wheel animates these real-scene stickers along its arc while
 turning or spinning. The `description` and first three `details` rows appear
@@ -113,3 +113,24 @@ verification; do not infer them from movie names.
 - `movies.schema.json`: version 1 catalog contract.
 - `artwork/`: movie cutouts.
 - `AGENTS.md`: editing instructions for Muse and other agents.
+
+## Automated artwork preparation
+
+Tell Muse: “Read AGENTS.md, add [title] on [provider], and use the existing scene recipe workflow. Push the validated catalog to main.”
+
+Run `python3 scripts/prepare_all.py` with Python 3.9+ and Pillow. It rebuilds the
+recipes in `sources/recipes.json`, creates matching cutouts and background plates,
+updates the catalog paths, and validates the result. For a single existing entry:
+
+```sh
+python3 scripts/prepare_scene.py --id your-movie-2026 \
+  --source sources/your-movie-2026/scene.jpg \
+  --mask sources/your-movie-2026/mask.png
+```
+
+The defaults match the approved preview: scene context 32%, light 14%, angle 64°.
+The same original photo supplies both images, with exact alignment and faded
+edges. No outline, synthetic people, or runtime lighting filters are added.
+The projector draws cached background images and fades them while the wheel turns;
+image processing happens ahead of time. Source selection and mask quality still
+need visual review. New catalog entries only need a manual refresh or startup sync.

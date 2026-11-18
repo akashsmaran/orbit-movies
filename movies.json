@@ -5,7 +5,7 @@
       "id": "anand-2004",
       "title": "Anand",
       "year": 2004,
-      "artwork": "artwork/anand-2004-v4-sticker.png",
+      "artwork": "artwork/anand-2004-450c5f614296-cutout.png",
       "accent": "#D99D61",
       "links": [
         {
@@ -19,13 +19,14 @@
         "Telugu · Drama",
         "Written & directed by Sekhar Kammula",
         "Raja · Kamalinee Mukherjee"
-      ]
+      ],
+      "background": "artwork/anand-2004-450c5f614296-scene.jpg"
     },
     {
       "id": "baththa-2026",
       "title": "Baththa",
       "year": 2026,
-      "artwork": "artwork/baththa-2026-v4-sticker.png",
+      "artwork": "artwork/baththa-2026-841c6859d9a0-cutout.png",
       "accent": "#E8A01C",
       "links": [
         {
@@ -39,13 +40,14 @@
         "Tamil · Comedy drama",
         "Vijay Sethupathi · Lijomol Jose",
         "Also starring Sai Prithviraj"
-      ]
+      ],
+      "background": "artwork/baththa-2026-841c6859d9a0-scene.jpg"
     },
     {
       "id": "the-big-bang-theory",
       "title": "The Big Bang Theory",
       "year": 2007,
-      "artwork": "artwork/the-big-bang-theory-v4-sticker.png",
+      "artwork": "artwork/the-big-bang-theory-3f45cd218f5a-cutout.png",
       "accent": "#7CC3D6",
       "links": [
         {
@@ -59,7 +61,8 @@
         "Sitcom · 12 seasons",
         "Created by Chuck Lorre & Bill Prady",
         "Johnny Galecki · Jim Parsons · Kaley Cuoco"
-      ]
+      ],
+      "background": "artwork/the-big-bang-theory-3f45cd218f5a-scene.jpg"
     }
   ]
 }

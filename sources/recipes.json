@@ -1,0 +1,26 @@
+[
+  {
+    "id": "anand-2004",
+    "source": "sources/anand-2004/scene.jpg",
+    "mask": "sources/anand-2004/mask.png",
+    "context": 32,
+    "light": 14,
+    "angle": 64
+  },
+  {
+    "id": "baththa-2026",
+    "source": "sources/baththa-2026/scene.jpg",
+    "mask": "sources/baththa-2026/mask.png",
+    "context": 32,
+    "light": 14,
+    "angle": 64
+  },
+  {
+    "id": "the-big-bang-theory",
+    "source": "sources/the-big-bang-theory/scene.jpg",
+    "mask": "sources/the-big-bang-theory/mask.png",
+    "context": 32,
+    "light": 14,
+    "angle": 64
+  }
+]

@@ -79,7 +79,7 @@
           "background": {
             "type": "string",
             "minLength": 1,
-            "description": "Optional blurred scene image, relative to movies.json or an HTTPS URL."
+            "description": "Optional prepared 16:9 dark scene/light plate aligned to the natural cutout, relative to movies.json or an HTTPS URL."
           },
           "description": {
             "type": "string",

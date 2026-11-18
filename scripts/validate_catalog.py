@@ -52,7 +52,7 @@ def main():
                     raise ValueError('Remote images must use HTTPS')
             else:
                 local = (ROOT/movie[field]).resolve()
-                if movie[field].startswith('/') or '..' in movie[field] or not local.is_relative_to(ROOT):
+                if movie[field].startswith('/') or '..' in movie[field] or ROOT not in local.parents:
                     raise ValueError('Image path must stay inside the repository')
                 if not local.is_file(): raise ValueError(f'Missing image: {movie[field]}')
                 allowed = ('.png', '.webp') if field == 'artwork' else ('.jpg', '.jpeg', '.png', '.webp')

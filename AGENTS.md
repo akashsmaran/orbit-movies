@@ -16,8 +16,9 @@ This repository contains catalog data and artwork, not the Android app source.
 - The repo is public. Never add private information.
 - Automatic sync runs only when Orbit starts. The visible Refresh from GitHub button also syncs on explicit user action. Returning from another app, switching tabs, and browsing do not sync.
 - Artwork must be cut from real movie/show scenes, using original people and poses. Do not use AI-generated or illustrated characters. Seated or cropped scenes are welcome; do not force standing bodies.
-- Use a transparent PNG with a black outline; do not use a pale/white sticker border. The active design uses a plain dark background; do not add scene backdrops.
-- Native foreground masks, manual masks, cropping, resampling, outlines, and blur are permitted. Do not synthesize faces, bodies, or missing scene content.
+- Use natural transparent edges. Do not add black/white outlines or artificial cutout shadows.
+- Add faint, aligned context from the SAME original scene plus a soft angled background light. Keep the text panel, top controls and footer dark. The approved defaults are context 32%, light 14%, angle 64°.
+- Native foreground masks, manual masks, cropping, resampling, and blur are permitted. Do not synthesize faces, bodies, or missing scene content.
 - Do not claim that repository edits have synced to the projector until that behavior is verified.
 
 - Preserve the rotating wheel and visible Spin button. Up navigates to the top buttons and must not immediately spin. Do not replace the wheel with a static gallery or thumbnail strip without explicit design approval.
@@ -27,3 +28,15 @@ This repository contains catalog data and artwork, not the Android app source.
 - Center the selected cutout horizontally and anchor its bottom above the footer controls. Keep rotation and explicit Spin-button activation intact.
 
 - Top-row controls: Up focuses Spin; Left/Right selects Spin or Refresh; OK activates; Down returns to the wheel. Down from the wheel opens tabs.
+
+## Muse: adding or updating a title
+
+1. Verify the requested title, provider link and factual metadata. Add or update its stable entry in `movies.json`; preserve other entries and ordering.
+2. Find a good real scene with a useful room/environment and the requested people. Record the exact source page and image URLs in `artwork/SOURCES.md`. Never use generated images. Keep source images and same-size grayscale foreground masks under `sources/<id>/scene.jpg` and `mask.png` (white selects the people, black the background). Use a foreground segmentation tool or carefully prepared manual mask. Inspect hair, hands, furniture edges and faces; do not substitute a rectangular crop if a usable mask is unavailable.
+3. Add a recipe to `sources/recipes.json`, following the existing entries. Defaults are approved; adjust the light angle to fit the actual source direction when needed. Do not change the wheel, UI or layout.
+4. With Python 3.9+ and Pillow installed, run `python3 scripts/prepare_all.py`. This deterministically builds paired natural-edge cutouts and aligned dark scene/light plates, updates `artwork` and `background`, and validates the catalog. Content-derived filenames prevent stale projector caches. Re-running unchanged recipes produces the same paths.
+5. Inspect the pair together on a 1920×1080 dark canvas: background fills the screen; cutout fits inside 800×650, centered at x=960, bottom y=935. No outlines, duplicated people, stretched poses or hard rectangular scene edges. Ensure text at x=110..520 remains dark and readable. Cutout lighting itself stays faithful to the source; the beam is behind it.
+6. Run `python3 scripts/validate_catalog.py`; commit sources, recipe, generated assets, provenance and catalog together; push to `main`. No APK rebuild is needed for catalog entries.
+7. Tell the user to press Refresh from GitHub or restart Orbit. Do not claim live deployment without checking the projector. Do not add polling or agent/API calls on the projector.
+
+The preparation code runs on the agent's computer, not on the projector. Mask creation and source selection still require visual judgment; the composition, naming and catalog updates are automated.
