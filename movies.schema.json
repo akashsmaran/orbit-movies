@@ -75,6 +75,11 @@
               }
             },
             "maxItems": 12
+          },
+          "background": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Optional blurred scene image, relative to movies.json or an HTTPS URL."
           }
         }
       }

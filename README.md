@@ -6,8 +6,9 @@ reads `movies.json` and displays movie cutouts in the Orbit wheel.
 
 **Status:** the Android implementation is built and tested on the projector.
 The first favorites are Anand (2004) on YouTube, Baththa (2026) on Netflix,
-and The Big Bang Theory on Hulu. The entries now use tall, realistic painted people illustrations with transparent
-backgrounds, anchored at the base of the Orbit wheel. See `artwork/SOURCES.md` for provenance.
+and The Big Bang Theory on Hulu. The entries use sticker cutouts from real scenes, preserving the actors’ original
+faces and poses. The interface has blurred scene backgrounds, orbit details, and
+a compact collection strip. See `artwork/SOURCES.md` for provenance.
 
 ## Add a movie
 
@@ -16,7 +17,8 @@ backgrounds, anchored at the base of the Orbit wheel. See `artwork/SOURCES.md` f
 3. Commit artwork and catalog together to `main`.
 
 Entries appear in array order. Use a stable lowercase, hyphenated `id`, a title,
-optional year and accent color, an artwork path relative to `movies.json`, and
+optional year and accent color, artwork and optional background paths relative
+to `movies.json`, and
 one or more streaming destinations.
 
 ```json
@@ -46,10 +48,12 @@ subscription, and installed app support. Multiple links allow provider choice.
 The launcher checks GitHub **once when Orbit starts**. It loads the saved catalog
 immediately, then downloads the latest catalog and any missing artwork in the
 background. It does not poll, refresh on tab changes, refresh on returning from
-a streaming app, or make image requests while browsing. Cached artwork is decoded
+a streaming app, or make image requests while browsing. The visible **Refresh from GitHub** button
+starts another sync only when explicitly pressed. Cached artwork is decoded
 locally as needed.
 
-To get new favorites after Muse updates the repo, restart Orbit (or the projector).
+To get new favorites after Muse updates the repo, press **Refresh from GitHub**
+or restart Orbit (or the projector).
 Pressing Home from a streaming app returns to the existing launcher and does not
 start another sync. Missing downloads are retried at the next startup.
 
@@ -72,11 +76,12 @@ contract, unique IDs, local artwork files, size limits, and link schemes.
 ## Projector controls
 
 - Left/right: browse movies.
-- Up: spin to choose a movie.
+- Up: focus the Refresh from GitHub button; OK refreshes.
 - OK: open the title link or choose a service.
-- Down: select a launcher tab.
+- Down: focus the collection; press Down again to reach launcher tabs.
 - Menu: select a launcher tab.
-- Restart Orbit: check GitHub for catalog updates.
+- Play/Pause: choose a random favorite.
+- Restart Orbit: automatically check GitHub for catalog updates.
 
 Missing streaming apps show a message. Unsupported title links fall back to
 opening the streaming app, with a message to search for the movie.

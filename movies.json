@@ -5,7 +5,7 @@
       "id": "anand-2004",
       "title": "Anand",
       "year": 2004,
-      "artwork": "artwork/anand-2004-v2.png",
+      "artwork": "artwork/anand-2004-v3-sticker.png",
       "accent": "#D99D61",
       "links": [
         {
@@ -13,13 +13,14 @@
           "packageName": "com.google.android.youtube.tv",
           "url": "https://www.youtube.com/watch?v=FB504Bec9uU"
         }
-      ]
+      ],
+      "background": "artwork/anand-2004-v3-background.jpg"
     },
     {
       "id": "baththa-2026",
       "title": "Baththa",
       "year": 2026,
-      "artwork": "artwork/baththa-2026-v2.png",
+      "artwork": "artwork/baththa-2026-v3-sticker.png",
       "accent": "#E8A01C",
       "links": [
         {
@@ -27,13 +28,14 @@
           "packageName": "com.netflix.ninja",
           "url": "https://www.netflix.com/title/83064751"
         }
-      ]
+      ],
+      "background": "artwork/baththa-2026-v3-background.jpg"
     },
     {
       "id": "the-big-bang-theory",
       "title": "The Big Bang Theory",
       "year": 2007,
-      "artwork": "artwork/the-big-bang-theory-v2.png",
+      "artwork": "artwork/the-big-bang-theory-v3-sticker.png",
       "accent": "#7CC3D6",
       "links": [
         {
@@ -41,7 +43,8 @@
           "packageName": "com.hulu.livingroomplus",
           "url": "https://www.hulu.com/series/9bde5aeb-5297-4290-b173-19a4d59cc11d"
         }
-      ]
+      ],
+      "background": "artwork/the-big-bang-theory-v3-background.jpg"
     }
   ]
 }

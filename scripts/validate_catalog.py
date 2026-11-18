@@ -44,17 +44,20 @@ def main():
         if movie['id'] in identifiers: raise ValueError(f'Duplicate movie id: {movie["id"]}')
         identifiers.add(movie['id'])
         if not movie['title'].strip(): raise ValueError('Movie title cannot be blank')
-        art = urlparse(movie['artwork'])
-        if art.scheme:
-            if art.scheme != 'https' or not art.hostname or art.username:
-                raise ValueError('Remote artwork must use HTTPS')
-        else:
-            local = (ROOT/movie['artwork']).resolve()
-            if movie['artwork'].startswith('/') or '..' in movie['artwork'] or not local.is_relative_to(ROOT):
-                raise ValueError('Artwork path must stay inside the repository')
-            if not local.is_file(): raise ValueError(f'Missing artwork: {movie["artwork"]}')
-            if local.suffix.lower() not in ('.png', '.webp'): raise ValueError('Use PNG or WebP cutouts')
-            if local.stat().st_size > 4*1024*1024: raise ValueError('Artwork exceeds 4 MiB')
+        for field in ('artwork', 'background'):
+            if field not in movie: continue
+            art = urlparse(movie[field])
+            if art.scheme:
+                if art.scheme != 'https' or not art.hostname or art.username:
+                    raise ValueError('Remote images must use HTTPS')
+            else:
+                local = (ROOT/movie[field]).resolve()
+                if movie[field].startswith('/') or '..' in movie[field] or not local.is_relative_to(ROOT):
+                    raise ValueError('Image path must stay inside the repository')
+                if not local.is_file(): raise ValueError(f'Missing image: {movie[field]}')
+                allowed = ('.png', '.webp') if field == 'artwork' else ('.jpg', '.jpeg', '.png', '.webp')
+                if local.suffix.lower() not in allowed: raise ValueError('Unsupported image format')
+                if local.stat().st_size > 4*1024*1024: raise ValueError('Image exceeds 4 MiB')
         for link in movie['links']:
             if not re.fullmatch(r'[a-zA-Z][a-zA-Z0-9_]*(\.[a-zA-Z0-9_]+)+', link['packageName']):
                 raise ValueError('Invalid Android package name')

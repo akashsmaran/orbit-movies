@@ -14,6 +14,8 @@ This repository contains catalog data and artwork, not the Android app source.
 - Run `python3 scripts/validate_catalog.py` before committing.
 - Keep each image under 4 MiB. Use a new artwork filename whenever replacing an image; existing image paths are cached indefinitely.
 - The repo is public. Never add private information.
-- Projector sync runs only when Orbit starts. Returning from another app or switching tabs does not sync. Restart Orbit after catalog updates.
-- Artwork style: tall realistic painted people on a true transparent background, full figures extending from the bottom toward the top. Avoid rectangular posters, text, frames, and clay/toy styling.
+- Automatic sync runs only when Orbit starts. The visible Refresh from GitHub button also syncs on explicit user action. Returning from another app, switching tabs, and browsing do not sync.
+- Artwork must be cut from real movie/show scenes, using original people and poses. Do not use AI-generated or illustrated characters. Seated or cropped scenes are welcome; do not force standing bodies.
+- Use a transparent PNG with a subtle sticker outline. Optional `background` points to a blurred version of the same real scene.
+- Native foreground masks, manual masks, cropping, resampling, outlines, and blur are permitted. Do not synthesize faces, bodies, or missing scene content.
 - Do not claim that repository edits have synced to the projector until that behavior is verified.
