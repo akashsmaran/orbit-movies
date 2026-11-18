@@ -1,4 +1,47 @@
 {
   "schemaVersion": 1,
-  "movies": []
+  "movies": [
+    {
+      "id": "anand-2004",
+      "title": "Anand",
+      "year": 2004,
+      "artwork": "artwork/anand-2004-v1.png",
+      "accent": "#D99D61",
+      "links": [
+        {
+          "label": "YouTube",
+          "packageName": "com.google.android.youtube.tv",
+          "url": "https://www.youtube.com/watch?v=FB504Bec9uU"
+        }
+      ]
+    },
+    {
+      "id": "baththa-2026",
+      "title": "Baththa",
+      "year": 2026,
+      "artwork": "artwork/baththa-2026-v1.png",
+      "accent": "#E8A01C",
+      "links": [
+        {
+          "label": "Netflix",
+          "packageName": "com.netflix.ninja",
+          "url": "https://www.netflix.com/title/83064751"
+        }
+      ]
+    },
+    {
+      "id": "the-big-bang-theory",
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "artwork": "artwork/the-big-bang-theory-v1.webp",
+      "accent": "#7CC3D6",
+      "links": [
+        {
+          "label": "Hulu",
+          "packageName": "com.hulu.livingroomplus",
+          "url": "https://www.hulu.com/series/9bde5aeb-5297-4290-b173-19a4d59cc11d"
+        }
+      ]
+    }
+  ]
 }
