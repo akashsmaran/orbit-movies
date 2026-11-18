@@ -86,7 +86,9 @@ contract, unique IDs, local artwork files, size limits, and link schemes.
 Missing streaming apps show a message. Unsupported title links fall back to
 opening the streaming app, with a message to search for the movie.
 
-The arrow controls name the previous and next titles without large stationary
+The selected real-scene cutout is horizontally centered, bottom anchored above
+the footer, and edged in black to blend into the dark screen. The arrow controls
+name the previous and next titles without large stationary
 side images. The wheel animates these real-scene stickers along its arc while
 turning or spinning. The `description` and first three `details` rows appear
 beside the wheel; metadata sources are recorded in `metadata/SOURCES.md`.
