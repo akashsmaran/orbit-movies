@@ -5,7 +5,9 @@ Muse or another agent maintains this repository; the launcher integration
 reads `movies.json` and display movie cutouts in the Orbit wheel.
 
 **Status:** the Android implementation is built and tested on the projector.
-The catalog starts empty; add real favorites and artwork.
+The first favorites are Anand (2004) on YouTube, Baththa (2026) on Netflix,
+and The Big Bang Theory on Hulu. The initial entries use original title artwork;
+transparent cutouts are pending. See `artwork/SOURCES.md` for provenance.
 
 ## Add a movie
 
