@@ -63,6 +63,59 @@
         "Johnny Galecki · Jim Parsons · Kaley Cuoco"
       ],
       "background": "artwork/the-big-bang-theory-3f45cd218f5a-scene.jpg"
+    },
+    {
+      "id": "dead-poets-society-1989",
+      "title": "Dead Poets Society",
+      "year": 1989,
+      "artwork": "artwork/dead-poets-society-1989-58aa07a14da6-cutout.png",
+      "accent": "#2F4A3A",
+      "links": [
+        {
+          "label": "YouTube",
+          "packageName": "com.google.android.youtube.tv"
+        },
+        {
+          "label": "Hotstar",
+          "packageName": "in.hotstar"
+        }
+      ],
+      "description": "At a strict New England boys' school in 1959, a new English teacher encourages his students to read poetry, think for themselves, and make room for lives beyond what is expected of them.",
+      "details": [
+        "English",
+        "Language: English",
+        "Director: Peter Weir",
+        "Genre: Comedy, Drama",
+        "Starring: Robin Williams, Robert Sean Leonard, Ethan Hawke"
+      ],
+      "background": "artwork/dead-poets-society-1989-58aa07a14da6-scene.jpg"
+    },
+    {
+      "id": "oke-oka-jeevitham-2022",
+      "title": "Oke Oka Jeevitham",
+      "year": 2022,
+      "artwork": "artwork/oke-oka-jeevitham-2022-8baf7c1cd74b-cutout.png",
+      "accent": "#3F6E4E",
+      "links": [
+        {
+          "label": "YouTube",
+          "packageName": "com.google.android.youtube.tv",
+          "url": "https://www.youtube.com/watch?v=Z7pMUvcIUNw"
+        },
+        {
+          "label": "SonyLIV",
+          "packageName": "com.sonyliv"
+        }
+      ],
+      "description": "A Telugu–Tamil bilingual science-fiction melodrama about three friends who use a time machine and revisit 1990s nostalgia, in a feel-good story centred on emotions and second chances.",
+      "details": [
+        "Telugu",
+        "Language: Telugu (also shot in Tamil as Kanam)",
+        "Genre: Science-fiction melodrama",
+        "Director: Shree Karthick",
+        "Cast: Sharwanand, Amala Akkineni, Ritu Varma, Priyadarshi, Vennela Kishore"
+      ],
+      "background": "artwork/oke-oka-jeevitham-2022-8baf7c1cd74b-scene.jpg"
     }
   ]
 }
