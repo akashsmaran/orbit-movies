@@ -33,6 +33,23 @@ respective rights holders.
 - Background: `the-big-bang-theory-v3-background.jpg`.
 - Watch: https://www.hulu.com/series/9bde5aeb-5297-4290-b173-19a4d59cc11d
 
+## Dead Poets Society (1989)
+
+- Moment: Keating (Robin Williams) standing on his desk in the classroom, white shirt and striped tie, hands in his pockets, smiling down at his students — the iconic "O Captain! My Captain!" scene. The cutout is Keating alone, cropped at mid-shin where the foreground students occlude his lower legs; no desk rail or furniture crosses him. The classroom (windows, flag, chalkboard, students) is kept as faint aligned context in the background plate.
+- Source page: https://www.aarp.org/espanol/entretenimiento/cine-y-television/info-2014/fotos-peliculas-robin-williams.html
+- Source image: https://cdn.aarp.net/content/dam/aarp/entertainment/movies-for-grownups/2016/10/1140-robin-williams-top-movies-10-esp.imgcache.revf4271aaa0eb2111dfc3b7b2154485132.web.1900.1083.jpg
+- Cutout: `dead-poets-society-1989-58aa07a14da6-cutout.png`.
+- Background: `dead-poets-society-1989-58aa07a14da6-scene.jpg`.
+- Watch: YouTube and Hotstar (app-only, no verified title link).
+- Previous artwork (red sweater, seated on a desk, Moxie Cinema still) was replaced — it had dark fringing, a desk rail across Keating's legs, and an almost-black background plate.
+
+## Oke Oka Jeevitham (2022, Telugu)
+
+- Moment: The three friends — Adhi (Sharwanand, centre, blue kurta), Seenu (Vennela Kishore, left, green polo) and Chaitanya (Priyadarshi, right, white shirt and glasses) — standing together outdoors; the cutout is all three, with the green foliage kept as faint aligned context in the background plate.
+- Source page: https://www.ottplay.com/review/oke-oka-jeevitham-review-sharwanand-priyadarshi-and-vennela-kishore-shoulder-this-bumpy-yet-fascinating-sci-fi-comedy/f0e9fddc59631
+- Source image: https://images.ottplay.com/images/oke-oka-jeevitham-119.jpg
+- Watch: https://www.youtube.com/watch?v=Z7pMUvcIUNw (full 4K Telugu film, ManaChitraalu) and SonyLIV (app-only, no verified title link).
+
 The previous generated v2 images have been removed from the current repository.
 The v1 original title images are retained as historical source references and
 are not used by the active catalog. Availability and playback still depend on
