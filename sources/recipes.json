@@ -22,5 +22,21 @@
     "context": 32,
     "light": 14,
     "angle": 64
+  },
+  {
+    "id": "dead-poets-society-1989",
+    "source": "sources/dead-poets-society-1989/scene.jpg",
+    "mask": "sources/dead-poets-society-1989/mask.png",
+    "context": 32,
+    "light": 14,
+    "angle": -64
+  },
+  {
+    "id": "oke-oka-jeevitham-2022",
+    "source": "sources/oke-oka-jeevitham-2022/scene.jpg",
+    "mask": "sources/oke-oka-jeevitham-2022/mask.png",
+    "context": 32,
+    "light": 14,
+    "angle": 64
   }
 ]
